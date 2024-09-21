@@ -1,14 +1,14 @@
-package assignment_1_240918.common;
+package assignment_1_240918.exhaustive;
 
 import java.util.Arrays;
 
-public class Combination {
+public class CombinationWithDifferentValues {
 
     int[] nArray;
 
     int[] data;
 
-    Combination(int... nArray) {
+    CombinationWithDifferentValues(int... nArray) {
         if (nArray == null || nArray.length == 0) {
             throw new RuntimeException("Invalid input array");
         }
@@ -38,11 +38,11 @@ public class Combination {
     }
 
     public static void main(String[] args) {
-        Combination combination = new Combination(2, 3, 5);
+        CombinationWithDifferentValues Combination = new CombinationWithDifferentValues(2, 3, 5);
         int i = 0;
-        while (combination.next()) {
+        while (Combination.next()) {
             i++;
-            System.out.println(Arrays.toString(combination.getCurrent()));
+            System.out.println(Arrays.toString(Combination.getCurrent()));
         }
         System.out.println("total: " + i);
     }
