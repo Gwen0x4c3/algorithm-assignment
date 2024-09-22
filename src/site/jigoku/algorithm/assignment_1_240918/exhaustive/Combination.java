@@ -1,4 +1,4 @@
-package assignment_1_240918.exhaustive;
+package site.jigoku.algorithm.assignment_1_240918.exhaustive;
 
 import java.util.Arrays;
 
@@ -18,10 +18,7 @@ public class Combination {
         }
     }
 
-    /**
-     * 012 013 014 023 024 034 123 124 134 234
-     * @return
-     */
+
     public boolean next() {
         if (first) {
             first = false;
